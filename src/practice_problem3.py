@@ -181,6 +181,9 @@ def practice_problem3a(circles):
     #    TIME ESTIMATE:   10 minutes.
     ###########################################################################
 
+    center = rg.Circle
+    centerX = center.getX()
+    centerY = center.getY()
 
 def run_test_practice_problem3b():
     """ Tests the    practice_problem3b    function. """
@@ -355,6 +358,14 @@ def practice_problem3b(sequence):
     #    TIME ESTIMATE:   8 minutes.
     ###########################################################################
 
+    length = len(sequence)
+    test = sequence[(length - 1)]
+    count = ['']
+
+    for k in range(length):
+        if sequence[k] == test:
+            count.append(k)
+    return count
 
 def run_test_practice_problem3c():
     """ Tests the    practice_problem3c    function. """
